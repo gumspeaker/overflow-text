@@ -1,0 +1,20 @@
+@overflow-text-prefix-cls:~ 'simple-overflow-text';
+
+.@{overflow-text-prefix-cls} {
+  &-single {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &-multiply {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &&-rtl {
+    direction: rtl;
+  }
+}
